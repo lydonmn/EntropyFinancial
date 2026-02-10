@@ -1,1 +1,3 @@
-User-agent: *\nAllow: /\nSitemap: https://entropyfinancialgroup.com/sitemap.xml
+User-agent: *
+Disallow:
+Sitemap: https://entropyfinancialgroup.com/sitemap.xml

@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Entropy Financial Cite",
+    "description": "",
+    "home_page_url": "https://entropyfinancialgroup.com",
+    "feed_url": "https://entropyfinancialgroup.com/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Lydon Manning"
+    },
+    "items": [
+    ]
+}
