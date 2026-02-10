@@ -1,16 +1,7 @@
-backend:
-  name: github
-  repo: lydonmn/EntropyFinancial
-  branch: main
-  app_id: 28333203
-  client_id: iv23li73iTYZf10BQTuB
-  client_secret: 585eddff196c52d662e3c85fb93865af00fa8a4d
-  private_key: |
-    -----BEGIN RSA PRIVATE KEY-----
-    SHA256:TYdOSpCunsRTKa647vyudxj2Q2WZZmuD3mUnnSUGxFo=
-    -----END RSA PRIVATE KEY-----
-  auth_type: pkce
-  squash_merges: true
+backend: github
+repo: lydonmn/EntropyFinancial
+branch: main
+auth_type: pkce
 
 media_folder: "images"
 public_folder: "/images"
