@@ -1,1 +1,29 @@
-backend:\n  name: git-gateway\n  branch: main\nmedia_folder: "images"\npublic_folder: "/images"\ncollections:\n  - name: "services"\n    label: "Services"\n    folder: "services"\n    create: true\n    slug: "{{slug}}"\n    fields:\n      - { label: "Title", name: "title", widget: "string" }\n      - { label: "Current Description", name: "current_description", widget: "text" }\n      - { label: "Updated Description", name: "updated_description", widget: "text" }
+backend:
+  name: github
+  repo: lydonmn/EntropyFinancial  # your exact repo name (case-sensitive!)
+  branch: main
+  token: YOUR_PAT_HERE           # ← replace this line with your real PAT
+  squash_merges: true            # optional: cleaner commits
+
+media_folder: "images"           # where uploaded images go
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Hero Title", name: "hero_title", widget: "string"}
+      - {label: "Hero Tagline", name: "hero_tagline", widget: "text"}
+      - {label: "Body Content", name: "body", widget: "markdown"}
+  - name: "services"
+    label: "Services"
+    folder: "services"           # or adjust if services are in content/
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Image", name: "image", widget: "image"}
