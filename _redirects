@@ -1,3 +1,8 @@
+# Decap CMS callback - HIGHEST PRIORITY - must be line 1
+/admin/callback* /admin/index.html 200!
+/admin/callback /admin/index.html 200!
+/admin/callback/ /admin/index.html 200!
+
 # Decap CMS callback - MUST be first to override catch-all
 /admin/callback* /admin/index.html 200!
 /admin/callback /admin/index.html 200!
