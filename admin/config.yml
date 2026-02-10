@@ -1,4 +1,5 @@
 backend:
+  base_url: https://entropyfinancialgroup.com
   name: github
   repo: lydonmn/EntropyFinancial
   branch: main
