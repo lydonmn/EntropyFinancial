@@ -3,3 +3,6 @@
 /admin/  /admin/index.html  200!
 /admin/callback /admin/index.html 200!
 /admin/callback/ /admin/index.html 200!
+/admin/callback* /admin/index.html 200!
+/admin/callback /admin/index.html 200!
+/admin/callback/ /admin/index.html 200!
