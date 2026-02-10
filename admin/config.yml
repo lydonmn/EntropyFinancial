@@ -1,11 +1,18 @@
 backend:
   name: github
-  repo: lydonmn/EntropyFinancial  # your exact repo name (case-sensitive!)
+  repo: lydonmn/EntropyFinancial
   branch: main
-  token: YOUR_PAT_HERE           # ← replace this line with your real PAT
-  squash_merges: true            # optional: cleaner commits
+  app_id: 28333203
+  client_id: iv23li73iTYZf10BQTuB
+  client_secret: YOUR_NEW_CLIENT_SECRET_HERE
+  private_key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    SHA256:TYdOSpCunsRTKa647vyudxj2Q2WZZmuD3mUnnSUGxFo=
+    -----END RSA PRIVATE KEY-----
+  auth_type: pkce
+  squash_merges: true
 
-media_folder: "images"           # where uploaded images go
+media_folder: "images"
 public_folder: "/images"
 
 collections:
@@ -21,7 +28,7 @@ collections:
       - {label: "Body Content", name: "body", widget: "markdown"}
   - name: "services"
     label: "Services"
-    folder: "services"           # or adjust if services are in content/
+    folder: "services"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
