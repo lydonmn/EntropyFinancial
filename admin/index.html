@@ -1,1 +1,24 @@
-<!DOCTYPE html><html><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Content Manager</title></head><body><script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entropy Financial Group - Content Manager</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #f0f4f8; color: #333; margin: 0; padding: 20px; text-align: center; }
+    h1 { color: #001f3f; }
+    p { max-width: 600px; margin: 20px auto; }
+  </style>
+</head>
+<body>
+  <h1>Loading Content Manager...</h1>
+  <p>If this takes too long, check browser console for errors.</p>
+
+  <!-- Decap CMS - latest stable version -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Optional: force load config from /admin/config.yml
+    CMS.registerBackend('github', window.CMS_GITHUB_BACKEND);
+  </script>
+</body>
+</html>
